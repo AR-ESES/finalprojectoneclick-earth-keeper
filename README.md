@@ -18,14 +18,14 @@ Desbrava a floresta densa como nunca antes visto em Earth Keeper! Este jogo, ent
 
 3. Layouts 
 - Personagem Principal
-![char](personagem.png);
+![char](personagem.png)
 
 - Obstáculos
-![obstaculo_machado](machado.png);
-![obstaculo_motoserra](motoserra.png);
+![obstaculo_machado](machado.png)
+![obstaculo_motoserra](motoserra.png)
 
 - Background
-![background]();
+![background]()
 
 ## Tópico 2: Design de Comunicação	
 // texto
