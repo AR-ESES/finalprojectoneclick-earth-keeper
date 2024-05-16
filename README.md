@@ -1,27 +1,49 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/ipevJCXR)
-# Aqui vou escrever um lindo título H1
-## H2
-### Aqui um sub-título
-Bold 	**bold text**
-Italic 	*italicized text*
-Blockquote 	> blockquote
+#             EARTH KEEPER
+#### por Jaime Conceição e Pedro Henriques 
+## Projeto desenvolvido no âmbito da Unidade Curricular de Design Multimédia, dirigida pelos docentes André Rocha e José Basto.
 
-### Ordered List 	
-1. First item
-2. Second item
-3. Third item
-4. 
-### Unordered List 	
-- First item
-- Second item
-- Third item
+## Tópico 1: Conjunto de layouts
+// texto
+1. Protótipo de baixa definição
+[prototipo_altadefinição](https://youtu.be/0SvJkbfCoRE)
 
-Code 	`code`
+2. Protótipo de alta definição
+[prototipo_altadefinição](https://youtu.be/q6ozkvQXaGU)
 
-Horizontal Rule 	---
+3. Layouts 
+    -Personagem Principal
+![char](...)
 
-### Link 	
-[title](https://www.example.com)
+    -Obstáculos
+![obstaculo_machado](...)
+![obstaculo_motoserra](...)
 
-### Image 	
-![desenho do Asteroide](asteroid.png)
+    -Background
+![background](...)
+
+## Tópico 2: Design de Comunicação	
+// texto
+1. Identidade gráfica:
+- Logotipo
+![logotipo](logotipo.png)
+
+2. Aplicabilidade da marca:
+- T-shirt
+![merch_t-shirt](t-shirt_char.jpg)
+- Hoodie
+![merch_hoodie](hoodie.jpg)
+- Cap´s
+![merch_capmachado](cap_machado.jpg)
+![merch_capmotoserra](cap_motoserra.jpg)
+- Brindes - Porta-chaves
+![merch_portachaves](porta-chaves.jpg)
+- Brindes - Tapete de rato
+![merch_tapeterato](tapete_rato.jpg)
+
+## Tópico 3: Vídeo
+// texto
+[videopromocional](....)
+
+## Tópico 4: Jogo
+// texto
+[jogo](....)
