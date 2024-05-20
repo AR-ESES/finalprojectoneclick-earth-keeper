@@ -2,19 +2,17 @@
 
 function Obstacle() {
   this.x = width;
-  this.y = random(height);
-  this.w = random(30, 80);
-  this.topMin = 50;
-  this.botMin = height - 50;
-  this.gapStart = random(this.topMin, this.botMin);
-  this.gapLength = 200;
-  this.speed = 10;
-  this.img2 = loadImage("asteroid.png");
+  this.y = 3.5*height/5;
+  this.w = 65; // Definir o tamanho 
+
+  this.speed = 7; // velocidade objeto
+  this.img2 = loadImage("machado.png");
+  this.index=int(random(2.99));
 
   this.show = function () {
     fill(0);
+    
     if (this.highlight) {
-      //desenha duas circunferencias com o impacto...
       noFill();
       stroke(255);
       strokeWeight(3);
@@ -31,8 +29,14 @@ function Obstacle() {
         this.w * 1.5
       );
     }
-    image(this.img2, this.x, this.y, this.w, this.w);
+    if(this.index == 1){
+      image(this.img2, this.x, this.y, this.w, this.w);
+    }
+    if(this.index == 2){
+      ellipse(this.x, this.y, this.w, this.w);
+    }
   };
+
   this.update = function () {
     this.x -= this.speed;
   };
