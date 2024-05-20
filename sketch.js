@@ -21,7 +21,7 @@ let VelDoFundo = 6;
 let posDoFundo = 0;
 
 function preload() { //NOVO
-  backgroundImage = loadImage('Background.png'); //imagem de fundo
+  backgroundImage = loadImage('back.png'); //imagem de fundo
 }
 
 function setup() {
