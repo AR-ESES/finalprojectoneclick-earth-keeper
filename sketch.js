@@ -2,26 +2,21 @@ let spaceship;
 
 // vars relativas aos obstaculos
 let meteorites1 = []; //obstacle Type 1 List, duplicate with different name if you want more
+let meteorites2 = []; 
 let obstaclesCleared;
 let obstaclesHit;
-let frameCountBettwenObstaclesType1 = 20;
-
-//vars das arvores
-let arbustos = [];
-let arbustosLimpos;
-let frameCountBettwenObstaclesType2 = 80;
-
+let frameCountBettwenObstaclesType1 = 10;
 
 //vars relacionadas com a jogabilidade
-let nivelDeDificuldade = 1;
+let nivelDeDificuldade = 5;
 let backgroundImage;
 
 //vars do fundo
-let VelDoFundo = 6;
+let VelDoFundo = 7;
 let posDoFundo = 0;
 
 function preload() { //NOVO
-  backgroundImage = loadImage('back.png'); //imagem de fundo
+  backgroundImage = loadImage('background.png'); //imagem de fundo
 }
 
 function setup() {
@@ -31,11 +26,7 @@ function setup() {
   obstaclesCleared = 0;
   obstaclesHit = 0;
 
-  arbustosLimpos = 0;
-
-  arbustos.push(new Arvore());
   meteorites1.push(new Obstacle());
-  
 }
 
 function draw() {
@@ -48,27 +39,11 @@ function draw() {
   spaceship.update();
 
   // codigo relativo a obstaculo com colisão
-
   frameCountBettwenObstaclesType1 = int(random(70,80));
   frameCountBettwenObstaclesType2 = int(random(100));
 
   if (frameCount % frameCountBettwenObstaclesType1 == 0) { // novos obstaculos
     meteorites1.push(new Obstacle());
-  }
-
-  if (frameCount % frameCountBettwenObstaclesType2 == 0) { // novos obstaculos
-    arbustos.push(new Arvore());
-  }
-
-  // função de correr todos os obstaculos e fazer update a cada frame
-  for (var j = arbustos.length - 1; j >= 0; j--) {
-    arbustos[j].show();
-    arbustos[j].update();
-  
-    if (arbustos[j].offscreen()) { // mata os que sairam do ecrã
-      arbustos.splice(j, 1);
-      arbustosLimpos++;
-    }
   }
 
   // função de correr todos os obstaculos e fazer update a cada frame
@@ -85,7 +60,23 @@ function draw() {
       obstaclesCleared++;
     }
   }
+  //motoserrra . obstacle 2
+  if (frameCount % frameCountBettwenObstaclesType1 == 0) { // novos obstaculos
+    meteorites2.push(new Obstacle2());
+  }
+  for (var i = meteorites2.length - 1; i >= 0; i--) {
+    meteorites2[i].show();
+    meteorites2[i].update();
 
+    if (meteorites2[i].hits(spaceship)) { // colisões
+      obstaclesHit++;
+    }
+
+    if (meteorites2[i].offscreen()) { // mata os que sairam do ecrã
+      meteorites2.splice(i, 1);
+      obstaclesCleared++;
+    }
+  }
 
   // update do fundo
   posDoFundo = posDoFundo - VelDoFundo;

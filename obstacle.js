@@ -1,12 +1,11 @@
 //This is an obstacle template.... duplicate for more.
-
 function Obstacle() {
   this.x = width;
-  this.y = 3.5*height/5;
-  this.w = 65; // Definir o tamanho 
+  this.y = 3.35*height/5;
+  this.w = 80; // Definir o tamanho 
 
-  this.speed = 7; // velocidade objeto
-  this.img2 = loadImage("machado.png");
+  this.speed = 20; // velocidade objeto
+  this.img3 = loadImage("motoserra.png");
   this.index=int(random(2.99));
 
   this.show = function () {
@@ -30,10 +29,7 @@ function Obstacle() {
       );
     }
     if(this.index == 1){
-      image(this.img2, this.x, this.y, this.w, this.w);
-    }
-    if(this.index == 2){
-      ellipse(this.x, this.y, this.w, this.w);
+      image(this.img3, this.x, this.y, this.w, this.w);
     }
   };
 

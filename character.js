@@ -1,12 +1,12 @@
 function Character() {
-  this.y = 1.4*height/5;
+  this.y = 3.35*height/5;
   this.x = width / 4;
   this.push = 1.4;
   this.lift = -30;
   this.velocity = 0;
   this.diam = 80;
-  this.img = loadImage("char escala.png");
-  this.minHeight = 1.85*height/5;
+  this.img = loadImage("personagem.png");
+  this.minHeight = 1.83*height/5;
   this.jumped = false;
 
 
@@ -15,7 +15,7 @@ function Character() {
     stroke(0);
     strokeWeight(2);
     fill(255);
-    image(this.img, this.x, this.y, this.diam, this.diam * 1.372222); // insert the raw png image propotion rate and use this.diam to input image width
+    image(this.img, this.x, this.y, this.diam, this.diam * 1.3777); // insert the raw png image propotion rate and use this.diam to input image width
   };
 
   this.goUp = function () {
@@ -27,7 +27,7 @@ function Character() {
     
   this.update = function () {
     this.velocity += this.push;
-    this.velocity *= 0.9;
+    this.velocity *= 0.89;
     this.y += this.velocity;
 
     if (this.y >= height - this.minHeight) {
