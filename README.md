@@ -9,7 +9,7 @@ Desbrava a floresta densa como nunca antes visto em Earth Keeper! Este jogo, ent
 [link](https://pt.pinterest.com/petihenriques/one-click-game/?board_collab_inviter=True&invite_code=071472b8f97a409886b0af53202db170&inviter_user_id=885590851634344888)
 
 ## Tópico 1: Conjunto de layouts
-// texto
+
 1. Protótipo de baixa definição
 [link](https://youtu.be/0SvJkbfCoRE)
 
@@ -25,10 +25,13 @@ Desbrava a floresta densa como nunca antes visto em Earth Keeper! Este jogo, ent
 ![obstaculo_motoserra](motoserra.png)
 
 - Background
-![background]()
+![background](fundo.png)
+
+- Elementos foreground
+![arbustos](arbustos.png) 
 
 ## Tópico 2: Design de Comunicação	
-// texto
+
 1. Identidade gráfica:
 - Logotipo
 ![logotipo](logotipo.png)
@@ -50,10 +53,10 @@ Desbrava a floresta densa como nunca antes visto em Earth Keeper! Este jogo, ent
 - Brindes - Tapete de rato
 ![merch_tapeterato](tapete_rato.jpg)
 
-## Tópico 3: Vídeo
-// texto
-[videopromocional](....)
+## Tópico 3: Vídeo - Trailer
+
+[videopromocional](https://youtu.be/g95YfS06CsY)
 
 ## Tópico 4: Jogo
-// texto
-[jogo](....)
+
+[jogo](https://ar-eses.github.io/finalprojectoneclick-earth-keeper/)
