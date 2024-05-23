@@ -25,10 +25,10 @@ Desbrava a floresta densa como nunca antes visto em Earth Keeper! Este jogo, ent
 ![obstaculo_motoserra](motoserra.png)
 
 - Background
-![background](fundo.png)
+![background](fundo.png) 
 
 - Elementos foreground
-![arbustos](arbustos.png) 
+![arbustos](arbustos.png)  
 
 ## Tópico 2: Design de Comunicação	
 
